@@ -28,6 +28,20 @@ class UserAdmin(BaseUserAdmin):
         (_('Important_dates'), {'fields': ('last_login',)}),
     )
     readonly_fields = ['last_login']
+    add_fieldsets = (
+        (None, {
+            'classes': ('wide',),
+            'fields': (
+                'email',
+                'password1',
+                'password2',
+                'name',
+                'is_active',
+                'is_staff',
+                'is_superuser'
+            )
+        }),
+    )
 
 
 # to assign changes from custom user model i.e. UserAdmin, we'll have to pass it below otherwise it'll
