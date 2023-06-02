@@ -14,3 +14,4 @@ link: https://stackoverflow.com/a/43309554
   ```docker
     docker-compose run --rm app sh -c "python manage.py startapp user<name-of-app>"
   ```
+  - Add `user` app in `app/app/settings.py` to register and enable it in our project.
