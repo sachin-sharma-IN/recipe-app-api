@@ -12,4 +12,5 @@ app_name = "user"
 # name='create' is used for reverse lookup in test cases.
 urlpatterns = [
     path('create/', views.CreateUserView.as_view(), name='create'),
+    path('token/', views.CreateTokenView.as_view(), name='token'),
 ]
